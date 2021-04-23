@@ -1,6 +1,6 @@
 
 
-const findLongestSubsequence = (inputString: string): number[] => {
+const stringToArray = (inputString: string): number[] => {
 
     if (inputString === ' ' || inputString === '') {
         throw Error('Input must contain at least one number')
@@ -17,4 +17,4 @@ const findLongestSubsequence = (inputString: string): number[] => {
 
 }
 
-export default findLongestSubsequence
+export default stringToArray
