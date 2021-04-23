@@ -1,10 +1,14 @@
 
 
-const arrayToString = (inputArray: number[]): string => {
+const arrayToString = (inputArray: number[] | undefined): string => {
 
-    let outputString = inputArray.toString()
+    if (inputArray) {
+        let outputString = inputArray.toString()
 
-    return outputString.replace(/,/g, ' ')
+        return outputString.replace(/,/g, ' ')
+    }
+
+    throw Error('No values found')
 
 }
 
