@@ -9,7 +9,7 @@ clear();
 // Print out the application name
 console.log(
   chalk.yellow(
-    figlet.textSync('Find MAX SubSequence', { horizontalLayout: 'full' }),
+    figlet.textSync('Find \nMAX \nSubSequence', { horizontalLayout: 'full' }),
   ),
 );
 
