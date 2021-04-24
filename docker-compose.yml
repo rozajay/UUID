@@ -1,0 +1,14 @@
+version: '2'
+services:
+    test:
+        build: .
+        command: npm test
+        volumes:
+            - .:/usr/src/app
+            - /usr/src/app/node_modules
+    lint:
+        build: .
+        command: npm run lint
+        volumes:
+            - .:/usr/src/app
+            - /usr/src/app/node_modules
