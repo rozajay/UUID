@@ -1,15 +1,11 @@
-
-
 const arrayToString = (inputArray: number[] | undefined): string => {
+  if (inputArray) {
+    const outputString = inputArray.toString();
 
-    if (inputArray) {
-        let outputString = inputArray.toString()
+    return outputString.replace(/,/g, ' ');
+  }
 
-        return outputString.replace(/,/g, ' ')
-    }
+  throw Error('No values found');
+};
 
-    throw Error('No values found')
-
-}
-
-export default arrayToString
+export default arrayToString;
